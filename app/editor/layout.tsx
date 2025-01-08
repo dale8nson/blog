@@ -5,9 +5,8 @@ export default function Layout({ children }: { children: ReactNode }) {
   return (
     <div className="w-screen h-screen flex flex-col justify-start items-center bg-white text-black m-0 font-sans">
       <NavBar />
-      <div className="flex flex-row gap-8">
-
-        <main className="w-full p-4">
+      <div className="flex flex-col gap-8">
+        <main className="w-full p-2">
           {children}
         </main>
       </div>
