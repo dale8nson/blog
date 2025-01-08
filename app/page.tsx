@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="w-11/12 h-full md:w-2/3 p-4 flex flex-col justify-start items-start content-between gap-5">
-      <h1 className="font-bold text-[2.5rem]">YourSite</h1>
+      {/* <h1 className="font-bold text-[2.5rem]">YourSite</h1> */}
       <hr className="border-[#000000] w-full border-[1.5px]" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2">
         <div className="flex flex-col gap-4">
