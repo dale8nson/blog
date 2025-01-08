@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="w-11/12 md:w-2/3 flex flex-col justify-start items-start content-between gap-5">
+    <main className="w-11/12 h-full md:w-2/3 p-4 flex flex-col justify-start items-start content-between gap-5">
       <h1 className="font-bold text-[2.5rem]">YourSite</h1>
-      <hr className="border-[#fafafa] w-full border-[1.5px]" />
+      <hr className="border-[#000000] w-full border-[1.5px]" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-2">
         <div className="flex flex-col gap-4">
           <img src="/placeholder-img.png" width={432} height={225} />
@@ -33,7 +33,7 @@ export default function Home() {
         <div className="h-11 overflow-hidden flex flex-row flex-nowrap w-full border-[1px] p-1 border-[#fafafa] border-solid items-center"><p className="text-[1.2rem] font-mono ">48dnPpGgo8WernVJp5VhvhaX3u9e46NujdYA44u8zuMdETNC5jXiA9S7JoYMM6qRt1ZcKpt1J3RZ3JPuMyXetmbHH7Mnc9C</p></div>
         </div>
       </div>
-      <hr className="border-[#fafafa] w-full border-[1.5px]" />
+      <hr className="border-[#000000] w-full border-[1.5px]" />
       <p className="self-center">[<a>email</a>] ~ [<a>i2p</a>] ~ [<a>tor</a>] ~ [<a>xmpp</a>] </p>
       <div className="flex flex-row self-center justify-center items-center gap-2">
         <img src="/banporn.png" width={88} height={31} />
