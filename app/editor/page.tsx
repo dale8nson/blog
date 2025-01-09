@@ -1,7 +1,6 @@
 "use client"
 import { Editor } from "primereact/editor"
 import { useState } from "react"
-import { DatePicker } from "@/components/DatePicker"
 
 
 export default function EditorPage () {
@@ -11,7 +10,6 @@ export default function EditorPage () {
     <label className="text-2xl" htmlFor="#title" >Title:</label>
     <input id="title" className="border-solid border-[1.5px] p-2" placeholder="Post title" type="text" />
     <label htmlFor="date-picker" className="text-2xl">Date:</label>
-    <DatePicker id="date-picker" className="justify-self-start" />
     <Editor value={text} onTextChange={(e) => setText(e.htmlValue as string)} className="col-span-2 md:col-span-4 md:w-[80vw] h-[65vh]" />
     <button className="md:col-start-4 m-4 self-end text-white bg-black rounded-3xl px-4 py-2 w-1/2">Post</button>
     </form>
