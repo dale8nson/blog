@@ -10,15 +10,12 @@ import { getClient } from "@/lib/actions";
 
 const client = contentful.createClient({accessToken: process.env.CONTENTFUL_ACCESS_TOKEN as string, space: process.env.CONTENTFUL_SPACE_ID as string})
 
-type Props = {
-  params: Promise<{ id: string }>
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
-}
+// type Props = {
+//   params: Promise<{ id: string }>
+//   searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+// }
 
-export async function generateMetadata(
-  { params, searchParams }: Props,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
+export async function generateMetadata(): Promise<Metadata> {
   // const client = await getClient()
   const entries = await client.getEntries<SiteSkeleton>({ content_type: "site" })
   console.log("entries: ", entries)
