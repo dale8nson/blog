@@ -1,31 +1,54 @@
-import type { Metadata } from "next";
+import type { Metadata, ResolvingMetadata } from "next";
 import "./globals.css";
 import * as contentful from "contentful"
 // import { useCMS } from "@/lib/hooks/useCMS"
 import { SiteSkeleton } from "@/types";
 import { getClient } from "@/lib/actions";
 
-const client = await getClient()
 
-// const client = contentful.createClient({accessToken: process.env.CONTENTFUL_ACCESS_TOKEN as string, space: process.env.CONTENTFUL_SPACE_ID as string})
+// const client = await getClient()
 
-const entries = await client.getEntries<SiteSkeleton>({content_type:"site"})
-console.log("entries: ", entries)
-const { id } = entries.items[0].sys
-const entry = await client.getEntry<SiteSkeleton>(id)
-console.log("site entry: ", entry)
-const { title } = entry.fields
+const client = contentful.createClient({accessToken: process.env.CONTENTFUL_ACCESS_TOKEN as string, space: process.env.CONTENTFUL_SPACE_ID as string})
 
-export const metadata: Metadata = {
-  title: title as string,
-  description: "",
-};
+type Props = {
+  params: Promise<{ id: string }>
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}
 
-export default function RootLayout({
+export async function generateMetadata(
+  { params, searchParams }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  // const client = await getClient()
+  const entries = await client.getEntries<SiteSkeleton>({ content_type: "site" })
+  console.log("entries: ", entries)
+  const { id } = entries.items[0].sys
+  const entry = await client.getEntry<SiteSkeleton>(id)
+  console.log("site entry: ", entry)
+  const { title } = entry.fields
+  return {
+    title: title as string
+  }
+
+}
+
+// export const metadata: Metadata = {
+//   title: title as string,
+//   description: "",
+// };
+
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const entries = await client.getEntries<SiteSkeleton>({ content_type: "site" })
+  console.log("entries: ", entries)
+  const { id } = entries.items[0].sys
+  const entry = await client.getEntry<SiteSkeleton>(id)
+  console.log("site entry: ", entry)
+  const { title } = entry.fields
 
   return (
 

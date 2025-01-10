@@ -1,5 +1,5 @@
 "use client"
-import { useId } from "react"
+import { useId, Suspense } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import * as types from "@contentful/rich-text-types"
@@ -53,7 +53,9 @@ const Entry = ({node}:{node: types.Block | types.Inline }) => {
                 const { url, details } = nd.data.target.fields.file
                 const { width, height } = details.image
       
-                return <Image key={id} src={`https:${url}`} width={width} height={height} alt={title} />
+                return <Suspense key={id} fallback={(
+                  <div className={`w-${width} h-${height} bg-[#c4c4c4] animate-pulse`} />
+                )}><Image src={`https:${url}`} width={width} height={height} alt={title} /></Suspense>
               }
             case BLOCKS.TABLE:
               return <table key={id}>{<Entry key={useId()} node={nd} />}</table>
