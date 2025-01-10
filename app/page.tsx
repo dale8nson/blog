@@ -8,6 +8,8 @@ import { Header } from "@/components/Header";
 import { RecentPosts } from "@/components/RecentPosts";
 import { Footer } from "@/components/Footer";
 
+export const revalidate = 60
+
 export default async function Home() {
 
   const homepage = await getHomepage()
