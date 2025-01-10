@@ -32,7 +32,7 @@ const NavBar = () => {
       <nav className="flex flex-row gap-4 items-start w-screen p-4">
         <HamburgerButton onClick={() => { setMenuOpen(true) }} className="md:hidden" />
       </nav>
-      <div id="overlay" className="fixed z-10 top-0 left-0 bg-black bg-opacity-60 h-screen w-screen -translate-x-[100%] md:hidden" onClick={() => setMenuOpen(false)} />
+      <div id="overlay" className="fixed z-10 top-0 left-0 bg-black bg-opacity-60 h-screen w-screen -translate-x-[100%] md:hidden" onClick={() => setMenuOpen(false)} /> 
         <div id="rail-menu" className="fixed bg-white z-[60] top-0 left-0 hidden h-screen w-[5%] drop-shadow-xl border-solid border-2 md:flex md:flex-col items-center gap-4 p-2">
         <SideNavButton onClick={() => setMenuOpen(!menuOpen)} className="" width="46px" height="46px" />
         </div>

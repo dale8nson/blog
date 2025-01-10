@@ -19,7 +19,7 @@ export default async function Home() {
   return (
     <>
       <Header />
-      <main className="w-11/12 h-full md:w-2/3 flex flex-col justify-start items-start content-between gap-5 border-black border-solid border-y-[1.5px] py-4">
+      <main className="w-11/12 min-h-[70vh] md:w-2/3 flex flex-col justify-start items-start content-between gap-5 py-4">
         {/* <hr className="border-[#000000] w-full border-[1.5px]" /> */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-4 md:gap-y-4">
           <div className="flex flex-col gap-4">
