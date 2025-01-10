@@ -99,3 +99,6 @@ export function parse(node: types.Block | types.Inline) {
     }
   })
 }
+
+export const getDateString = (date: string) => new Intl.DateTimeFormat("en-US", { dateStyle:"long" }).format(new Date(date))
+
