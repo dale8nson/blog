@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import * as contentful from "contentful"
-import { useCMS } from "@/lib/hooks/useCMS"
+// import { useCMS } from "@/lib/hooks/useCMS"
 import { SiteSkeleton } from "@/types";
 import { getClient } from "@/lib/actions";
 
-// const client = await getClient()
+const client = await getClient()
 
-const client = contentful.createClient({accessToken: process.env.CONTENTFUL_ACCESS_TOKEN as string, space: process.env.CONTENTFUL_SPACE_ID as string})
+// const client = contentful.createClient({accessToken: process.env.CONTENTFUL_ACCESS_TOKEN as string, space: process.env.CONTENTFUL_SPACE_ID as string})
 
 const entries = await client.getEntries<SiteSkeleton>({content_type:"site"})
 console.log("entries: ", entries)
