@@ -9,20 +9,8 @@ import { Entry } from "@/components/Entry";
 export default async function Home() {
   const client = useCMS()
 
-  // type HomepageSkeleton = {
-  //   contentTypeId: 'homepage'
-  //   fields: {
-  //     welcomeText: contentful.EntryFieldTypes.RichText
-  //     images: contentful.EntryFieldTypes.AssetLink
-  //   }
-  // }
-
   console.log("client: ", client)
-  // const types = await client.getContentTypes()
-  // console.log("contenTypes:", types.items)
-  // const entries = await client.getEntries({content_type:"blogPost"})
-  // console.log("entries.items: ", entries.items)
-  // const file = entries.items[0].fields.body?.content[2].data.target.fields.file
+
   const homepage = await client.getEntries<HomepageSkeleton>({ content_type: "homepage" })
   console.log("homepage.items: ", homepage.items)
   const id = homepage.items[0].sys.id
@@ -38,12 +26,6 @@ export default async function Home() {
   const {BLOCKS} = types
   const eeb = content.find(n => n.nodeType === BLOCKS.EMBEDDED_ENTRY)
   console.log("eeb.data.target.fields: ", eeb?.data.target.fields)
-  // console.log("items: ", items)
-
-  // const fields = items 
-  // const intro = fields 
-  // as contentful.EntryCollection<contentful.EntrySkeleton, contentful.Modifiers, contentful.Locales>
-  // console.log("intro: ", intro)
 
   return (
     <main className="w-11/12 h-full md:w-2/3 p-4 flex flex-col justify-start items-start content-between gap-5">

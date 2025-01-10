@@ -5,16 +5,15 @@ import Link from "next/link"
 import * as types from "@contentful/rich-text-types"
 
 
-const Entry = ({node, key}:{node: types.Block | types.Inline , key?: string}) => {
+const Entry = ({node}:{node: types.Block | types.Inline}) => {
   const { BLOCKS } = types
   console.log("node: ", node)
 
   return (
-     <span>
+     <>
        {node.content.map(nd => {
-      
-          let id = nd.nodeType === BLOCKS.DOCUMENT ? nd.data.target.fields.id : useId()
-      
+        let id = nd.nodeType === BLOCKS.DOCUMENT ? nd.data.target.fields.id : useId()
+
           switch (nd.nodeType) {
       
             case BLOCKS.DOCUMENT:
@@ -47,7 +46,7 @@ const Entry = ({node, key}:{node: types.Block | types.Inline , key?: string}) =>
               return <q key={id}>{<Entry key={useId()} node={nd} />}</q>
             case BLOCKS.EMBEDDED_ENTRY:
               const { title, slug } = nd.data.target.fields
-              return <Link href={`/blog/${slug}`}>{title}</Link>
+              return <Link key={useId()} href={`/blog/${slug}`}>{title}</Link>
             case BLOCKS.EMBEDDED_ASSET:
               {
                 const { title } = nd.data.target.fields
@@ -65,15 +64,15 @@ const Entry = ({node, key}:{node: types.Block | types.Inline , key?: string}) =>
             case BLOCKS.TABLE_HEADER_CELL:
               return <th key={id}>{<Entry key={useId()} node={nd} />}</th>
             case "text":
-              return <span>{nd.value + "\n"}</span>
+              return <span key={id}>{nd.value + "\n"}</span>
             case "hyperlink":
               console.log("hyperlink: ", nd)
-              return <span><Link key={id} href={nd.data.uri}>{<Entry key={useId()} node={nd} />}</Link></span>
+              return <span key={id}><Link href={nd.data.uri}>{<Entry key={useId()} node={nd} />}</Link></span>
       
           }
         })
       }
-     </span>
+     </>
   )
 }
 
