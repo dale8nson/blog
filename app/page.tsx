@@ -40,7 +40,6 @@ export default async function Home() {
     </ul>
   )
 
-
   return (
     <main className="w-11/12 h-full md:w-2/3 p-4 flex flex-col justify-start items-start content-between gap-5">
       <hr className="border-[#000000] w-full border-[1.5px]" />
