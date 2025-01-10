@@ -12,7 +12,7 @@ const RecentPosts = async () => {
   const sortedPosts = posts.toSorted((a: contentful.Entry<BlogPostSkeleton> , b: contentful.Entry<BlogPostSkeleton>) => {
     const d1 = new Date(a.fields.date as string)
     const d2 = new Date(b.fields.date as string)
-    return d1 < d2 ? -1 : d1 > d2 ? 1 : 0
+    return d1 > d2 ? -1 : d1 < d2 ? 1 : 0
   })
 
   const shortList = sortedPosts.slice(0, 6)
