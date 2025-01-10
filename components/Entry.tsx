@@ -5,7 +5,7 @@ import Link from "next/link"
 import * as types from "@contentful/rich-text-types"
 
 
-const Entry = ({node}:{node: types.Block | types.Inline}) => {
+const Entry = ({node}:{node: types.Block | types.Inline }) => {
   const { BLOCKS } = types
   console.log("node: ", node)
 
@@ -68,7 +68,6 @@ const Entry = ({node}:{node: types.Block | types.Inline}) => {
             case "hyperlink":
               console.log("hyperlink: ", nd)
               return <span key={id}><Link href={nd.data.uri}>{<Entry key={useId()} node={nd} />}</Link></span>
-      
           }
         })
       }
