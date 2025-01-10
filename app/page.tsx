@@ -36,12 +36,13 @@ export default async function Home() {
         <li>{dateStr} - <Link href={`/blog/${slug}`}>{title as string}</Link> </li>
       )
     })}
-    {posts.items.length === 7 && <li><Link href="/blog"><i>More...</i></Link></li>}
+    {/* {posts.items.length === 7 && <li><Link href="/blog"><i>More...</i></Link></li>} */}
+    <li><Link href="/blog"><i>More...</i></Link></li>
     </ul>
   )
 
   return (
-    <main className="w-11/12 h-full md:w-2/3 p-4 flex flex-col justify-start items-start content-between gap-5">
+    <main className="w-11/12 h-full md:w-2/3 flex flex-col justify-start items-start content-between gap-5">
       <hr className="border-[#000000] w-full border-[1.5px]" />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-4 md:gap-y-4">
         <div className="flex flex-col gap-4">
