@@ -13,16 +13,16 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
   const { slug } = await params
   const { title, date, body } = await getPostBySlug(slug)
 
-  // const dateStr = getDateString(date as string)
+  const dateStr = getDateString(date as string)
 
   console.log("body: ", body)
   return (
     <>
-      {/* <header className="flex flex-col w-2/3 h-full items-start gap-2 py-2">
+      <header className="flex flex-col w-2/3 h-full items-start gap-2 py-2">
     <h1>{title as string}</h1>
     <p>{dateStr}</p>
-    </header> */}
-      <Header slug={slug} />
+    </header>
+      {/* <Header slug={slug} /> */}
       <main className="flex flex-col w-2/3 h-full items-start gap-4 border-[#000000] border-y-[1.5px] py-4">
         {/* <hr className="border-[#000000] w-full border-[1.5px]" /> */}
         <BackButton />

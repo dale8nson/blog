@@ -55,7 +55,7 @@ const Entry = ({node}:{node: types.Block | types.Inline }) => {
       
                 return <Suspense key={id} fallback={(
                   <div className={`w-${width} h-${height} bg-[#c4c4c4] animate-pulse`} />
-                )}><Image src={`https:${url}`} width={width} height={height} alt={title} /></Suspense>
+                )}><div className="flex flex-row items-center justify-center w-full"><Image className="w-auto max-h-[50vh]" src={`https:${url}`} width={width} height={height} alt={title} /></div></Suspense>
               }
             case BLOCKS.TABLE:
               return <table key={id}>{<Entry key={useId()} node={nd} />}</table>
