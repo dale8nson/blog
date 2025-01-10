@@ -4,15 +4,11 @@ import { BlogPostSkeleton, HomepageSkeleton } from "@/types";
 import * as types from "@contentful/rich-text-types"
 import { Entry } from "@/components/Entry";
 import { getHomepage } from "@/lib/actions";
-import Link from "next/link";
 import { Header } from "@/components/Header";
 import { RecentPosts } from "@/components/RecentPosts";
 import { Footer } from "@/components/Footer";
 
 export default async function Home() {
-  const client = useCMS()
-
-  console.log("client: ", client)
 
   const homepage = await getHomepage()
   const { welcomeText, rightSideContent } = homepage

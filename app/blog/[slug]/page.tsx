@@ -1,4 +1,4 @@
-import { getClient, getPostBySlug } from "@/lib/actions"
+import { getPostBySlug } from "@/lib/actions"
 import { BlogPostSkeleton } from "@/types"
 import { Entry } from "@/components/Entry"
 import * as types from "@contentful/rich-text-types"
@@ -10,9 +10,6 @@ export default async function Page({params}:{params:Promise<{slug:string}>}) {
   const { slug } = await params
   const { title, date, body } = await getPostBySlug(slug)
 
-  // const dateStr = new Intl.DateTimeFormat("en-US", {
-  //   dateStyle:"long"
-  // }).format(new Date(date as string))
   const dateStr = getDateString(date as string)
 
   console.log("body: ", body)
