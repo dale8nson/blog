@@ -3,6 +3,7 @@ import { getPostBySlug, getSite, getHomepage } from "@/lib/actions"
 import { Entry } from "./Entry"
 import * as types from "@contentful/rich-text-types"
 import Link from "next/link"
+import { getDateString } from '../lib/utils';
 
 
 const Header = async ({ slug }: { slug?: string }) => {
@@ -16,6 +17,18 @@ const Header = async ({ slug }: { slug?: string }) => {
       <Entry node={header as types.Block} />
     </header>
   )
+
+  
+
+  if (post && slug) {
+    const dateStr = getDateString(post.date as string)
+    return (
+      <header className="flex flex-col w-2/3 h-full items-start gap-2 py-2">
+        <h1>{title as string}</h1>
+        <p>{dateStr}</p>
+      </header>
+    )
+  }
 
   return (
     <header className="w-11/12 md:w-2/3 flex flex-row justify-start items-center my-4">
