@@ -5,9 +5,11 @@ const { EntryFieldTypes } = contentful
 type SiteSkeleton = {
   contentTypeId: "site"
   fields: {
-    defaultHeader: EntryFieldTypes.RichText
     title: EntryFieldTypes.Text
+    description: EntryFieldTypes.Text
+    keywords: EntryFieldTypes.Text[]
     favicon: EntryFieldTypes.AssetLink
+    defaultHeader: EntryFieldTypes.RichText
     defaultFooter: EntryFieldTypes.RichText
   }
 }
@@ -16,10 +18,17 @@ type HomepageSkeleton = {
     contentTypeId: 'homepage'
     fields: {
       header: EntryFieldTypes.RichText
-      welcomeText: EntryFieldTypes.RichText
+      leftSideContent: EntryFieldTypes.RichText
       rightSideContent: EntryFieldTypes.RichText
       footer: EntryFieldTypes.RichText
       images: EntryFieldTypes.AssetLink[]
+    }
+  }
+
+  type PostListSkeleton = {
+    contentTypeId: 'postList'
+    fields: {
+      preListContent: EntryFieldTypes.RichText
     }
   }
 

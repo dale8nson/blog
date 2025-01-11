@@ -35,7 +35,7 @@ function printNode(node: types.Block) {
 }
 
 export function parse(node: types.Block | types.Inline) {
-  console.log("node: ", node)
+
   const { BLOCKS } = types
   return node.content.map(nd => {
 
@@ -93,9 +93,7 @@ export function parse(node: types.Block | types.Inline) {
       case "text":
         return <span>{nd.value + "\n"}</span>
       case "hyperlink":
-        console.log("hyperlink: ", nd)
         return <span><Link key={id} href={nd.data.uri}>{parse(nd)}</Link></span>
-
     }
   })
 }

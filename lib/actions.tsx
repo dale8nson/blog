@@ -1,5 +1,5 @@
 "use server"
-import { BlogPostSkeleton, HomepageSkeleton, SiteSkeleton } from "@/types"
+import { BlogPostSkeleton, HomepageSkeleton, PostListSkeleton, SiteSkeleton } from "@/types"
 import * as contentful from "contentful"
 import fs from "node:fs/promises"
 import sharp from "sharp"
@@ -38,6 +38,12 @@ export const getHomepage = async () => {
   const entries = await client.getEntries<HomepageSkeleton>({ content_type: "homepage" })
   if (entries) return entries.items[0].fields
   throw Error("Homepage not found")
+}
+
+export const getPostListContent = async () => {
+  const entries = await client.getEntries<PostListSkeleton>({ content_type: "postList" })
+  if (entries) return entries.items?.[0]?.fields
+  return {} as PostListSkeleton["fields"]
 }
 
 export const loadFavicon = async () => {

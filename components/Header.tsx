@@ -13,7 +13,6 @@ const Header = ({ post, site, date }: { post?: contentful.Entry<BlogPostSkeleton
 
   const pathname = usePathname()
   const title  = site?.title
-  console.log("title: ", title)
   const header = post?.header || site?.defaultHeader || null
 
   if (header) return (
@@ -25,7 +24,7 @@ const Header = ({ post, site, date }: { post?: contentful.Entry<BlogPostSkeleton
   if (post) {
     const dateStr = getDateString(post.date as string)
     return (
-      <header className="flex flex-col w-11/12 md:w-2/3 h-full items-start gap-2 py-2 border-black border-b-2 border-solid">
+      <header className="flex flex-col w-11/12 md:w-2/3 h-full items-start gap-2 my-4 py-2 border-black border-b-2 border-solid">
         <h1>{post.title as string}</h1>
         <p>{dateStr}</p>
       </header>

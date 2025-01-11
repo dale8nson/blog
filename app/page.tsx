@@ -15,8 +15,7 @@ export default async function Home() {
 
   const site = await getSite()
   const homepage = await getHomepage()
-  const { welcomeText, rightSideContent } = homepage
-  // console.log("welcomeText: ", welcomeText)
+  const { leftSideContent, rightSideContent } = homepage
 
   return (
     <>
@@ -24,7 +23,7 @@ export default async function Home() {
       <main className="w-11/12 min-h-[70vh] md:w-2/3 flex flex-col  justify-start items-start content-between gap-5 py-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-4 md:gap-y-4">
           <div className="flex flex-col gap-4 justify-items-center h-full">
-            {welcomeText && <Entry node={welcomeText as types.Block} />}
+            {leftSideContent && <Entry node={leftSideContent as types.Block} />}
           </div>
           <div className="flex flex-col justify-items-center gap-5 text-base md:grid md:grid-rows-2 h-full">
             <div className="flex flex-col justify-start items-start h-full">

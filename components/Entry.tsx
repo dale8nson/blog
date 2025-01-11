@@ -7,7 +7,6 @@ import * as types from "@contentful/rich-text-types"
 
 const Entry = ({ node }: { node: types.Block | types.Inline }) => {
   const { BLOCKS } = types
-  // console.log("node: ", node)
 
   return (
     <>
@@ -65,7 +64,6 @@ const Entry = ({ node }: { node: types.Block | types.Inline }) => {
             return <th key={id}>{<Entry key={useId()} node={nd} />}</th>
           case "text":
             {
-              console.log("marks: ", nd.marks)
               const className = nd.marks.map(mark => {
                 switch(mark.type) {
                   case "bold":
@@ -80,7 +78,6 @@ const Entry = ({ node }: { node: types.Block | types.Inline }) => {
               return <span className={className} key={id}>{nd.value + "\n"}</span>
             }
           case "hyperlink":
-            console.log("hyperlink: ", nd)
             return <span key={id}><Link href={nd.data.uri}>{<Entry key={useId()} node={nd} />}</Link></span>
         }
       })

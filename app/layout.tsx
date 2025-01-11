@@ -4,12 +4,14 @@ import "./globals.css";
 import { getSite, loadFavicon } from "@/lib/actions";
 
 const site = await getSite()
-const { title, favicon } = site
+const { title, description, keywords } = site
 
 export async function generateMetadata(): Promise<Metadata> {
 
   return {
-    title: title as string
+    title: title as string,
+    description: description as string,
+    keywords: keywords as string[]
   }
 }
 

@@ -10,13 +10,12 @@ export const revalidate = 60
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const post = await getPostBySlug(slug)
-  const { title, date, body } = post
+  const { body } = post
 
-  console.log("body: ", body)
   return (
     <>
       <Header post={post} />
-      <main className="flex flex-col w-11/12 md:w-2/3 min-h-[60vh] items-start gap-4 md:overflow-y-scroll">
+      <main className="w-11/12 min-h-[60vh] md:w-2/3 flex flex-col justify-start items-start content-evenly gap-5 md:overflow-y-scroll">
         <BackButton />
         <Entry node={body as types.Block} />
       </main>
