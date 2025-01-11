@@ -24,7 +24,6 @@
 .DS_Store
 *.pem
 .local.env
-app/favicon.ico
 
 # debug
 npm-debug.log*
