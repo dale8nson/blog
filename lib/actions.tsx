@@ -1,6 +1,9 @@
 "use server"
 import { BlogPostSkeleton, HomepageSkeleton, SiteSkeleton } from "@/types"
 import * as contentful from "contentful"
+import fs from "node:fs/promises"
+import sharp from "sharp"
+import ico from "sharp-ico"
 
 const client = contentful.createClient({ accessToken: process.env.CONTENTFUL_ACCESS_TOKEN as string, space: process.env.CONTENTFUL_SPACE_ID as string })
 
@@ -27,7 +30,7 @@ export const getPostBySlug = async (slug: string) => {
 
 export const getSite = async () => {
   const entries = await client.getEntries<SiteSkeleton>({ content_type: "site" })
-  if (entries) return entries.items[0].fields
+  if (entries) return entries.items?.[0].fields
   throw Error("Site data not found")
 }
 
@@ -37,3 +40,17 @@ export const getHomepage = async () => {
   throw Error("Homepage not found")
 }
 
+export const loadFavicon = async () => {
+  const site = await getSite()
+  const { favicon } = site
+  const { url, fileName } = (favicon as any)?.fields.file
+
+  const res = await fetch(`https:${url}`)
+  const blob = await res.blob()
+  const bytes = await blob.bytes()
+  const fileHandle = await fs.open(process.cwd() + "/public/" + fileName, "w+")
+  await fileHandle.writeFile(bytes)
+  await fileHandle.close()
+
+  await ico.sharpsToIco([sharp(process.cwd() + "/public/" + fileName)], process.cwd() + "/app/" + "favicon.ico")
+}

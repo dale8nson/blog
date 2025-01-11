@@ -5,17 +5,12 @@ import { getClient, getPosts } from "@/lib/actions"
 
 const RecentPosts = async () => {
 
-  const client = await getClient()
-
   const posts = await getPosts()
-
   const shortList = posts.slice(0, 6)
 
   return (
     <ul className="mx-2">
       {shortList.map(async item => {
-        // const postId = item.sys.id
-        // const entry = await client.getEntry<BlogPostSkeleton>(postId)
         const { title, slug, date } = item.fields
         const d = new Date(date as string)
         const dateStr = d.toLocaleDateString("en-GB")

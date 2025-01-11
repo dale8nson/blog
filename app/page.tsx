@@ -3,22 +3,24 @@ import * as contentful from "contentful"
 import { BlogPostSkeleton, HomepageSkeleton } from "@/types";
 import * as types from "@contentful/rich-text-types"
 import { Entry } from "@/components/Entry";
-import { getHomepage } from "@/lib/actions";
+import { getHomepage, getSite } from "@/lib/actions";
 import { Header } from "@/components/Header";
 import { RecentPosts } from "@/components/RecentPosts";
 import { Footer } from "@/components/Footer";
+import Link from "next/link";
 
 export const revalidate = 60
 
 export default async function Home() {
 
+  const site = await getSite()
   const homepage = await getHomepage()
   const { welcomeText, rightSideContent } = homepage
   // console.log("welcomeText: ", welcomeText)
 
   return (
     <>
-      <Header />
+      <Header site={site} />
       <main className="w-11/12 min-h-[70vh] md:w-2/3 flex flex-col  justify-start items-start content-between gap-5 py-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-x-4 md:gap-y-4">
           <div className="flex flex-col gap-4 justify-items-center h-full">
@@ -26,7 +28,7 @@ export default async function Home() {
           </div>
           <div className="flex flex-col justify-items-center gap-5 text-base md:grid md:grid-rows-2 h-full">
             <div className="flex flex-col justify-start items-start h-full">
-              <h2>Blog</h2>
+              <Link className="!no-underline" href="/blog"><h2 className="text-black">Blog</h2></Link>
               <RecentPosts />
             </div>
             <div className="flex flex-col justify-start items-start h-full">{rightSideContent && <Entry node={rightSideContent as types.Block} />}

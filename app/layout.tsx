@@ -1,12 +1,7 @@
 import type { Metadata } from "next";
 
 import "./globals.css";
-import { getSite } from "@/lib/actions";
-import fs from "node:fs/promises"
-import { NextRequest } from "next/server";
-import sharp from "sharp";
-import ico from "sharp-ico"
-
+import { getSite, loadFavicon } from "@/lib/actions";
 
 const site = await getSite()
 const { title, favicon } = site
@@ -24,23 +19,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  // const site = await getSite()
-  console.log("site: ", site)
-  const { favicon } = site
-  const { url, details, fileName } = (favicon as any)?.fields.file
-  const { width, height } = details.image
-
-  console.log("__dirname: ", __dirname)
-  const res = await fetch(`https:${url}`)
-  const blob = await res.blob()
-  const bytes = await blob.bytes()
-  const fileHandle = await fs.open(process.cwd() + "/public/" + fileName, "w+")
-  await fileHandle.writeFile(bytes)
-  await fileHandle.close()
-
-  const info = await ico.sharpsToIco([sharp(process.cwd() + "/public/" + fileName)], process.cwd() + "/app/" + "favicon.ico")
-
-
+  await loadFavicon()
 
   return (
 

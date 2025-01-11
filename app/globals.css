@@ -82,4 +82,33 @@ h2 {
   font-size: 1.5rem;
   line-height: 2.6rem;
   font-weight: 700;
+  margin-block: 0.83rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 2.6rem;
+  font-weight: 700;
+  margin-block: 0.83rem;
+}
+
+h4 {
+  font-size: 1rem;
+  line-height: 2.6rem;
+  font-weight: 700;
+  margin-block: 0.83rem;
+}
+
+h5 {
+  font-size: 0.75rem;
+  line-height: 2.6rem;
+  font-weight: 700;
+  margin-block: 0.83rem; 
+}
+
+h6 {
+  font-size: 0.5rem;
+  line-height: 2.6rem;
+  font-weight: 700;
+  margin-block: 0.83rem; 
 }
