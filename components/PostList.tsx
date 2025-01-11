@@ -6,7 +6,7 @@ import { BlogPostSkeleton } from "@/types"
 
 const PostList = ({ posts }: { posts: contentful.Entry<BlogPostSkeleton>[] }) => {
   return (
-    <ul className="md:[column-count:2]">
+    <ul className="mx-2 md:[column-count:2]">
       {posts.map(post => {
         const { date, title, slug } = post.fields
         const dateStr = new Date(date as string).toLocaleDateString()

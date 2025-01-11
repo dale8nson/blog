@@ -9,16 +9,10 @@ const RecentPosts = async () => {
 
   const posts = await getPosts()
 
-  const sortedPosts = posts.toSorted((a: contentful.Entry<BlogPostSkeleton> , b: contentful.Entry<BlogPostSkeleton>) => {
-    const d1 = new Date(a.fields.date as string)
-    const d2 = new Date(b.fields.date as string)
-    return d1 > d2 ? -1 : d1 < d2 ? 1 : 0
-  })
-
-  const shortList = sortedPosts.slice(0, 6)
+  const shortList = posts.slice(0, 6)
 
   return (
-    <ul>
+    <ul className="mx-2">
       {shortList.map(async item => {
         // const postId = item.sys.id
         // const entry = await client.getEntry<BlogPostSkeleton>(postId)
