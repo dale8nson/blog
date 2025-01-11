@@ -24,6 +24,7 @@
 .DS_Store
 *.pem
 .local.env
+app/favicon.ico
 
 # debug
 npm-debug.log*
@@ -40,3 +41,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+app/favicon.ico
