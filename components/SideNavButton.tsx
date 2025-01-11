@@ -1,4 +1,4 @@
-import { EventHandler, MouseEventHandler } from "react"
+import { MouseEventHandler } from "react"
 
 const SideNavButton = ({ onClick, width, height, className }: { onClick: MouseEventHandler<HTMLButtonElement>, className?: string, width:string, height: string }) => {
 

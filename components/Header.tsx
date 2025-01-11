@@ -6,14 +6,14 @@ import { Entry } from "./Entry"
 import * as types from "@contentful/rich-text-types"
 import Link from "next/link"
 import { getDateString } from '../lib/utils'
-import { BlogPostSkeleton, SiteSkeleton } from "@/types"
+import { BlogPostSkeleton, HomepageSkeleton, SiteSkeleton } from "@/types"
 import * as contentful from "contentful"
 
-const Header = ({ post, site, date }: { post?: contentful.Entry<BlogPostSkeleton>["fields"], site?:contentful.Entry<SiteSkeleton>["fields"], date?: string }) => {
+const Header = ({ post, site, homepage, date }: { post?: contentful.Entry<BlogPostSkeleton>["fields"], site?: contentful.Entry<SiteSkeleton>["fields"], homepage?: contentful.Entry<HomepageSkeleton>["fields"], date?: string }) => {
 
   const pathname = usePathname()
-  const title  = site?.title
-  const header = post?.header || site?.defaultHeader || null
+  const title = site?.title
+  const header = post?.header || homepage?.header || site?.defaultHeader || null
 
   if (header) return (
     <header className="w-11/12 md:w-2/3 flex flex-row justify-start items-center my-4 border-black border-b-2 border-solid">
@@ -31,14 +31,14 @@ const Header = ({ post, site, date }: { post?: contentful.Entry<BlogPostSkeleton
     )
   }
 
- if(pathname === "/blog" && date) {
-  return (
-    <header className="w-11/12 gap-2 md:w-2/3 flex flex-col justify-center items-start my-4 border-black pb-4 border-b-[1.5px] border-solid">
-      <Link className="!no-underline" href="/"><h1 className="font-bold text-black ">{title as string}</h1></Link>
-      <p className="leading-5">{date}</p>
-    </header>
-  )
- }
+  if (pathname === "/blog" && date) {
+    return (
+      <header className="w-11/12 gap-2 md:w-2/3 flex flex-col justify-center items-start my-4 border-black pb-4 border-b-[1.5px] border-solid">
+        <Link className="!no-underline" href="/"><h1 className="font-bold text-black ">{title as string}</h1></Link>
+        <p className="leading-5">{date}</p>
+      </header>
+    )
+  }
 
   return (
     <header className="w-11/12 md:w-2/3 flex flex-row justify-start items-center my-4 border-black pb-4 border-b-[1.5px] border-solid">
