@@ -23,7 +23,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
     <p>{dateStr}</p>
     </header>
       {/* <Header slug={slug} /> */}
-      <main className="flex flex-col w-2/3 h-full items-start gap-4 ">
+      <main className="flex flex-col w-2/3 min-h-[60vh] items-start gap-4 md:overflow-y-scroll">
         {/* <hr className="border-[#000000] w-full border-[1.5px]" /> */}
         <BackButton />
         <Entry node={body as types.Block} />

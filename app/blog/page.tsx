@@ -33,7 +33,7 @@ export default async function Page() {
       <div className="flex flex-row justify-start items-center w-2/3 h-4 -mt-2 mb-4">
       <p className="leading-5">{dateStr}</p>
     </div>
-      <main className="w-11/12 min-h-[40vh] md:w-2/3 flex flex-col justify-start items-start content-evenly gap-5 md:[column-count:2] " >
+      <main className="w-11/12 md:min-h-[60vh] md:w-2/3 flex flex-col justify-start items-start content-evenly gap-5 md:[column-count:2] " >
         {/* <hr className="border-[#000000] w-full border-[1.5px]" /> */}
         <BackButton />
         <PostList posts={sortedPosts as contentful.Entry<BlogPostSkeleton>[]} />

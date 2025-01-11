@@ -1,4 +1,3 @@
-import * as contentful from "contentful"
 import { getPostBySlug, getSite, getHomepage } from "@/lib/actions"
 import { Entry } from "./Entry"
 import * as types from "@contentful/rich-text-types"
@@ -9,6 +8,7 @@ const Header = async ({ slug }: { slug?: string }) => {
   const post = slug ? await getPostBySlug(slug) : null
   const site = await getSite()
   const { title } = site
+
   const header = post?.header || site.defaultHeader || null
 
   if (header) return (
