@@ -18,7 +18,7 @@ const RecentPosts = async () => {
         // const entry = await client.getEntry<BlogPostSkeleton>(postId)
         const { title, slug, date } = item.fields
         const d = new Date(date as string)
-        const dateStr = `${d.getDate()}/${d.getMonth() + 1}/${d.getFullYear()}`
+        const dateStr = d.toLocaleDateString("en-GB")
         return (
           <li>{dateStr} - <Link href={`/blog/${slug}`}>{title as string}</Link> </li>
         )
