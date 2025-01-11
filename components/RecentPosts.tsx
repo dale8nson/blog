@@ -15,7 +15,7 @@ const RecentPosts = async () => {
         const d = new Date(date as string)
         const dateStr = d.toLocaleDateString("en-GB")
         return (
-          <li>{dateStr} - <Link href={`/blog/${slug}`}>{title as string}</Link> </li>
+          <li className="text-wrap">{dateStr} - <Link href={`/blog/${slug}`} className="text-wrap whitespace-break-spaces">{title as string}</Link> </li>
         )
       })}
       {/* {posts.items.length === 7 && <li><Link href="/blog"><i>More...</i></Link></li>} */}
