@@ -45,7 +45,6 @@ const Header = ({ post, site, homepage, date }: { post?: contentful.Entry<BlogPo
       <Link className="!no-underline" href="/"><h1 className="font-bold text-black ">{title as string}</h1></Link>
     </header>
   )
-
 }
 
 export { Header }

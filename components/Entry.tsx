@@ -1,5 +1,5 @@
 "use client"
-import { useId, Suspense, Fragment } from "react"
+import { useId } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import * as types from "@contentful/rich-text-types"
