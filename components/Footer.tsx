@@ -1,4 +1,3 @@
-import * as contentful from "contentful"
 import { getPostBySlug, getSite, getHomepage } from "@/lib/actions"
 import { Entry } from "./Entry"
 import * as types from "@contentful/rich-text-types"

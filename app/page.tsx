@@ -1,6 +1,3 @@
-import { useCMS } from "@/lib/hooks/useCMS";
-import * as contentful from "contentful"
-import { BlogPostSkeleton, HomepageSkeleton } from "@/types";
 import * as types from "@contentful/rich-text-types"
 import { Entry } from "@/components/Entry";
 import { getHomepage, getSite } from "@/lib/actions";
