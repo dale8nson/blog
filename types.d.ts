@@ -7,6 +7,7 @@ type SiteSkeleton = {
   fields: {
     defaultHeader: EntryFieldTypes.RichText
     title: EntryFieldTypes.Text
+    favicon: EntryFieldTypes.AssetLink
     defaultFooter: EntryFieldTypes.RichText
   }
 }

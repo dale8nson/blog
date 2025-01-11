@@ -7,7 +7,7 @@ import * as types from "@contentful/rich-text-types"
 
 const Entry = ({ node }: { node: types.Block | types.Inline }) => {
   const { BLOCKS } = types
-  console.log("node: ", node)
+  // console.log("node: ", node)
 
   return (
     <>
