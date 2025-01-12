@@ -41,7 +41,7 @@ const Header = ({ post, site, homepage, date }: { post?: contentful.Entry<BlogPo
   }
 
   return (
-    <header className="w-11/12 md:w-2/3 flex flex-row justify-start items-center my-4 border-black pb-4 border-b-[1.5px] max-h-[20vw] border-solid">
+    <header className="w-11/12 md:w-2/3 flex flex-row justify-start items-center my-4 border-black pb-4 border-b-2 max-h-[20vw] border-solid">
       <Link className="!no-underline" href="/"><h1 className="font-bold text-black ">{title as string}</h1></Link>
     </header>
   )
