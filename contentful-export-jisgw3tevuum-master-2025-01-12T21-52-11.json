@@ -1,0 +1,4279 @@
+{
+  "contentTypes": [
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "blogPost",
+        "type": "ContentType",
+        "createdAt": "2025-01-08T21:23:36.899Z",
+        "updatedAt": "2025-01-11T05:36:55.853Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 13,
+        "publishedAt": "2025-01-11T05:36:55.853Z",
+        "firstPublishedAt": "2025-01-08T21:23:37.835Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 7,
+        "version": 14,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/content_types/blogPost"
+      },
+      "displayField": "title",
+      "name": "Blog Post",
+      "description": "A post for a blog",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "slug",
+          "name": "slug",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "date",
+          "name": "Date",
+          "type": "Date",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "body",
+          "name": "Body",
+          "type": "RichText",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "asset-hyperlink",
+                "embedded-entry-inline",
+                "entry-hyperlink",
+                "hyperlink",
+                "heading-1"
+              ],
+              "message": "Only heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to asset, inline entry, link to entry, link to Url, and heading 1 nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "footer",
+          "name": "Footer",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "asset-hyperlink",
+                "embedded-entry-inline",
+                "entry-hyperlink",
+                "hyperlink"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to asset, inline entry, link to entry, and link to Url nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "site",
+        "type": "ContentType",
+        "createdAt": "2025-01-09T03:30:20.161Z",
+        "updatedAt": "2025-01-12T07:31:49.574Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2025-01-12T07:31:49.574Z",
+        "firstPublishedAt": "2025-01-09T03:30:20.641Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 6,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/content_types/site"
+      },
+      "displayField": "title",
+      "name": "Site",
+      "description": "General settings for the site",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Text",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "publisher",
+          "name": "Publisher",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "authors",
+          "name": "Authors",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+            ]
+          }
+        },
+        {
+          "id": "keywords",
+          "name": "Keywords",
+          "type": "Array",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false,
+          "items": {
+            "type": "Symbol",
+            "validations": [
+            ]
+          }
+        },
+        {
+          "id": "favicon",
+          "name": "favicon",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkMimetypeGroup": [
+                "image"
+              ]
+            },
+            {
+              "assetImageDimensions": {
+                "width": {
+                  "min": null,
+                  "max": 128
+                },
+                "height": {
+                  "min": null,
+                  "max": 128
+                }
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
+        },
+        {
+          "id": "defaultHeader",
+          "name": "Default Header",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "asset-hyperlink",
+                "embedded-entry-inline",
+                "entry-hyperlink",
+                "hyperlink"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to asset, inline entry, link to entry, and link to Url nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "defaultFooter",
+          "name": "Default Footer",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "asset-hyperlink",
+                "embedded-entry-inline",
+                "entry-hyperlink",
+                "hyperlink"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to asset, inline entry, link to entry, and link to Url nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "homepage",
+        "type": "ContentType",
+        "createdAt": "2025-01-09T07:15:04.920Z",
+        "updatedAt": "2025-01-11T07:50:35.362Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 13,
+        "publishedAt": "2025-01-11T07:50:35.362Z",
+        "firstPublishedAt": "2025-01-09T07:15:05.503Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 7,
+        "version": 14,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/content_types/homepage"
+      },
+      "displayField": "title",
+      "name": "Homepage",
+      "description": "Main content appearing on the homepage",
+      "fields": [
+        {
+          "id": "header",
+          "name": "Header",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "asset-hyperlink",
+                "embedded-entry-inline",
+                "entry-hyperlink",
+                "hyperlink"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to asset, inline entry, link to entry, and link to Url nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "leftSideContent",
+          "name": "Left-Side Content",
+          "type": "RichText",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "asset-hyperlink",
+                "embedded-entry-inline",
+                "entry-hyperlink",
+                "hyperlink"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to asset, inline entry, link to entry, and link to Url nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "rightSideContent",
+          "name": "Right-Side Content",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "asset-hyperlink",
+                "embedded-entry-inline",
+                "entry-hyperlink",
+                "hyperlink"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to asset, inline entry, link to entry, and link to Url nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "postList",
+        "type": "ContentType",
+        "createdAt": "2025-01-11T07:48:09.694Z",
+        "updatedAt": "2025-01-11T07:54:22.026Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-01-11T07:54:22.026Z",
+        "firstPublishedAt": "2025-01-11T07:48:10.211Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/content_types/postList"
+      },
+      "displayField": null,
+      "name": "Post List",
+      "description": "",
+      "fields": [
+        {
+          "id": "preListContent",
+          "name": "Pre-list Content",
+          "type": "RichText",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "enabledMarks": [
+                "bold",
+                "italic",
+                "underline",
+                "code",
+                "superscript",
+                "subscript",
+                "strikethrough"
+              ],
+              "message": "Only bold, italic, underline, code, superscript, subscript, and strikethrough marks are allowed"
+            },
+            {
+              "enabledNodeTypes": [
+                "heading-1",
+                "heading-2",
+                "heading-3",
+                "heading-4",
+                "heading-5",
+                "heading-6",
+                "ordered-list",
+                "unordered-list",
+                "hr",
+                "blockquote",
+                "embedded-entry-block",
+                "embedded-asset-block",
+                "table",
+                "asset-hyperlink",
+                "embedded-entry-inline",
+                "entry-hyperlink",
+                "hyperlink"
+              ],
+              "message": "Only heading 1, heading 2, heading 3, heading 4, heading 5, heading 6, ordered list, unordered list, horizontal rule, quote, block entry, asset, table, link to asset, inline entry, link to entry, and link to Url nodes are allowed"
+            },
+            {
+              "nodes": {
+              }
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
+    }
+  ],
+  "tags": [
+  ],
+  "editorInterfaces": [
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "jisgw3tevuum",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 14,
+        "createdAt": "2025-01-08T21:23:37.949Z",
+        "createdBy": {
+          "sys": {
+            "id": "0DyvRKHQeMlRHlAA7ArkBG",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-01-11T05:36:56.765Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0DyvRKHQeMlRHlAA7ArkBG",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "blogPost",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "settings": {
+            "helpText": "Enter a title for your blog post"
+          },
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "slug",
+          "settings": {
+            "trackingFieldId": "title"
+          },
+          "widgetId": "slugEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "date",
+          "settings": {
+            "ampm": "24",
+            "format": "dateonly"
+          },
+          "widgetId": "datePicker",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "body",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "footer",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "jisgw3tevuum",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 12,
+        "createdAt": "2025-01-09T03:30:20.778Z",
+        "createdBy": {
+          "sys": {
+            "id": "0DyvRKHQeMlRHlAA7ArkBG",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-01-12T07:31:50.576Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0DyvRKHQeMlRHlAA7ArkBG",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "site",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "markdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "publisher",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "authors",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "keywords",
+          "widgetId": "tagEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "favicon",
+          "widgetId": "assetLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "defaultHeader",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "defaultFooter",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "jisgw3tevuum",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 14,
+        "createdAt": "2025-01-09T07:15:05.659Z",
+        "createdBy": {
+          "sys": {
+            "id": "0DyvRKHQeMlRHlAA7ArkBG",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-01-11T07:50:36.568Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0DyvRKHQeMlRHlAA7ArkBG",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "homepage",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "header",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "leftSideContent",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "rightSideContent",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "jisgw3tevuum",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 4,
+        "createdAt": "2025-01-11T07:48:10.353Z",
+        "createdBy": {
+          "sys": {
+            "id": "0DyvRKHQeMlRHlAA7ArkBG",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2025-01-11T07:54:23.080Z",
+        "updatedBy": {
+          "sys": {
+            "id": "0DyvRKHQeMlRHlAA7ArkBG",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "postList",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "preListContent",
+          "widgetId": "richTextEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "bzNPTRcxZ9wHQfGD64fwR",
+        "type": "Entry",
+        "createdAt": "2025-01-08T21:23:46.679Z",
+        "updatedAt": "2025-01-10T22:50:13.659Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 25,
+        "publishedAt": "2025-01-10T22:50:13.659Z",
+        "firstPublishedAt": "2025-01-08T21:25:13.243Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 26,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/entries/bzNPTRcxZ9wHQfGD64fwR"
+      },
+      "fields": {
+        "title": {
+          "en-US": "First post 🎺"
+        },
+        "slug": {
+          "en-US": "first-post"
+        },
+        "date": {
+          "en-US": "2024-01-17"
+        },
+        "body": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Hello, and welcome to my first blog post.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Here's a placeholder image!",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "3RGOuur7LLEFlK8XF8X3Ju",
+                      "type": "Link",
+                      "linkType": "Asset"
+                    }
+                  }
+                },
+                "content": [
+                ],
+                "nodeType": "embedded-asset-block"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "2AWOKdxpsRgKwWOJduiS1T",
+        "type": "Entry",
+        "createdAt": "2025-01-09T07:34:00.036Z",
+        "updatedAt": "2025-01-11T09:20:01.363Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 58,
+        "publishedAt": "2025-01-11T09:20:01.363Z",
+        "firstPublishedAt": "2025-01-09T07:38:53.319Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 14,
+        "version": 59,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "homepage"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/entries/2AWOKdxpsRgKwWOJduiS1T"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Home"
+        },
+        "leftSideContent": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Welcome",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-1"
+              },
+              {
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "aRYoVzIwh9B9EAYAhcEOe",
+                      "type": "Link",
+                      "linkType": "Asset"
+                    }
+                  }
+                },
+                "content": [
+                ],
+                "nodeType": "embedded-asset-block"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Hi, welcome to my cat blog, or clog—short for “cat blog”! This is ",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "The Clog",
+                    "nodeType": "text"
+                  },
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": ", your one-stop corner of the internet dedicated to all things feline. From heartwarming stories and helpful care tips to the quirkiest cat anecdotes, you’re in for a whisker-tingling adventure. Stay tuned for purr-fect content that will have you—and your furry friends—coming back for more!",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "rightSideContent": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                      {
+                        "type": "bold"
+                      }
+                    ],
+                    "value": "Donations",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "heading-2"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Feeling the warm, fuzzy cat vibes? If you’d like to support my caffeine-and-cat-toy fund (the essential fuels that keep The Clog purring), donations are always gratefully accepted! Think of it as treating both me—and my feline overlords—to a few extra goodies. We thank you, whisker and paw!",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "2lZ2buOWVjE3XwTfE8ELse",
+        "type": "Entry",
+        "createdAt": "2025-01-10T01:25:17.898Z",
+        "updatedAt": "2025-01-12T10:16:16.480Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 29,
+        "publishedAt": "2025-01-12T10:16:16.480Z",
+        "firstPublishedAt": "2025-01-10T01:25:30.104Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 11,
+        "version": 30,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "site"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/entries/2lZ2buOWVjE3XwTfE8ELse"
+      },
+      "fields": {
+        "title": {
+          "en-US": "The Clog"
+        },
+        "description": {
+          "en-US": "This is The Clog, your one-stop corner of the internet dedicated to all things feline. From heartwarming stories and helpful care tips to the quirkiest cat anecdotes, you’re in for a whisker-tingling adventure. Stay tuned for purr-fect content that will have you—and your furry friends—coming back for more!"
+        },
+        "keywords": {
+          "en-US": [
+            "cat",
+            "kitten",
+            "furry",
+            "pet",
+            "pets",
+            "animals",
+            "cats",
+            "kittens",
+            "kitty",
+            "feline"
+          ]
+        },
+        "favicon": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5KPLiWSuxwSF8J1USZtHQ7"
+            }
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "jjjxyXxnwHjovfN71y1ex",
+        "type": "Entry",
+        "createdAt": "2025-01-10T20:47:24.496Z",
+        "updatedAt": "2025-01-10T22:03:52.171Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 13,
+        "publishedAt": "2025-01-10T22:03:52.171Z",
+        "firstPublishedAt": "2025-01-10T20:47:53.702Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 4,
+        "version": 14,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/entries/jjjxyXxnwHjovfN71y1ex"
+      },
+      "fields": {
+        "title": {
+          "en-US": "The Enchanting World of Cats"
+        },
+        "slug": {
+          "en-US": "the-enchanting-world-of-cats"
+        },
+        "date": {
+          "en-US": "2025-01-11"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "embedded-asset-block",
+                "data": {
+                  "target": {
+                    "sys": {
+                      "id": "2ZEemF2W0038uwNZMxoryZ",
+                      "type": "Link",
+                      "linkType": "Asset"
+                    }
+                  }
+                },
+                "content": [
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "There’s something undeniably captivating about cats. With their graceful movements, expressive eyes, and mischievous personalities, it’s no wonder they have held a special place in human hearts for centuries. From ancient Egyptian worship to modern-day internet fame, cats remain a constant source of fascination.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "One reason we’re drawn to cats is their independent nature. Unlike dogs, who thrive on constant companionship, cats value their personal space and private time. That doesn’t mean they don’t enjoy a cuddle, though. In fact, cats often bond deeply with their favorite humans, showing love through gentle head nudges, purrs, and even the occasional ‘kneading’ session on a comfy lap.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Beyond their sweet personalities, cats also make excellent household companions. Their compact size means they can adapt to smaller living spaces, and their largely self-sufficient grooming habits require less upkeep than many other pets. With just a bit of playtime, a warm perch, and a few tasty treats, a cat can bring immeasurable joy—and perhaps a bit of whimsy—into your everyday life.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "21GM8gPdjh6FbK4IB5TPeC",
+        "type": "Entry",
+        "createdAt": "2025-01-10T22:46:07.695Z",
+        "updatedAt": "2025-01-10T22:47:17.772Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-01-10T22:47:17.772Z",
+        "firstPublishedAt": "2025-01-10T22:47:17.772Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/entries/21GM8gPdjh6FbK4IB5TPeC"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Whiskers and Wonders: A Peek into Feline Curiosity"
+        },
+        "slug": {
+          "en-US": "whiskers-and-wonders-a-peek-into-feline-curiosity"
+        },
+        "date": {
+          "en-US": "2025-01-03"
+        },
+        "body": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Cats are known for their innate curiosity, a trait that often lands them in the most unexpected places. Whether they’re perched on top of the fridge or peeking out from an empty cardboard box, these furry explorers crave the thrill of discovery in their daily routines. Their whiskers, a built-in “GPS,” help them gauge tight spaces and navigate the world around them.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Yet, curiosity can be a double-edged sword. Cats who explore outside face potential dangers such as traffic, predators, or exposure to diseases. Even within the home, inquisitive cats may knock over fragile decorations or slip into closets unnoticed. Recognizing your cat’s need to investigate can help you keep them safe while satisfying their instincts.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "The key is to channel their curiosity in a healthy way. Provide high perches, interactive toys, and puzzle feeders to encourage safe exploration. By offering supervised adventures or securing your home’s “trouble spots,” you ensure your cat’s experiences remain positive, enriching, and free from harm.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "4Fml1dnj2e3OYxqb3qXXfl",
+        "type": "Entry",
+        "createdAt": "2025-01-10T22:48:35.179Z",
+        "updatedAt": "2025-01-10T22:49:13.331Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-01-10T22:49:13.331Z",
+        "firstPublishedAt": "2025-01-10T22:49:13.331Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/entries/4Fml1dnj2e3OYxqb3qXXfl"
+      },
+      "fields": {
+        "title": {
+          "en-US": "The Midnight Cuddle: Understanding Your Cat’s Late-Night Rituals"
+        },
+        "slug": {
+          "en-US": "the-midnight-cuddle-understanding-your-cats-late-night-rituals"
+        },
+        "date": {
+          "en-US": "2024-12-12"
+        },
+        "body": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "If you’re a cat parent, you might be familiar with the midnight serenades and pitter-patter of paws. While humans are generally diurnal creatures, cats lean toward a crepuscular nature, meaning they’re often most active at dawn and dusk. This can lead them to roam the house, meow at mysterious corners, or attempt impromptu cuddles just as you drift off to sleep.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "It may feel disruptive when your cat decides to play or demand affection at 3 a.m., but understanding why they do this can help you coexist more harmoniously. Historically, cats hunted during low-light hours for maximum stealth, and this instinct continues to influence their sleep-wake cycle. Additionally, your late-night presence—warm and available—may tempt them to ask for a pet or two.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "To help manage these nocturnal escapades, establish a pre-bedtime play session. Engage your cat with a laser pointer or wand toy to burn off excess energy. Once playtime is over, offer a small meal or treat to complete the routine. With consistency, many cats learn to adjust to a schedule that’s more compatible with your own.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "5Ee4wwmhlk1SjAY8mKAjUC",
+        "type": "Entry",
+        "createdAt": "2025-01-10T22:51:16.373Z",
+        "updatedAt": "2025-01-10T22:51:43.064Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-01-10T22:51:43.064Z",
+        "firstPublishedAt": "2025-01-10T22:51:43.064Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/entries/5Ee4wwmhlk1SjAY8mKAjUC"
+      },
+      "fields": {
+        "title": {
+          "en-US": "The Art of Cat Naps: Why Cats Doze All Day"
+        },
+        "slug": {
+          "en-US": "the-art-of-cat-naps-why-cats-doze-all-day"
+        },
+        "date": {
+          "en-US": "2025-01-08"
+        },
+        "body": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "If you’ve ever envied your cat’s ability to nap anywhere, anytime, you’re not alone. Cats typically sleep 12-16 hours a day, with older felines or kittens clocking in even more shut-eye. From windowsills and couches to laundry baskets, they can turn almost any surface into a dreamland.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Their penchant for napping isn’t just about laziness—cats are natural predators who conserve energy between bursts of activity. In the wild, a cat’s hunting routine involves stealth and short chases, followed by rest to recharge. Domesticated cats maintain these sleep patterns, even if their “hunt” is just pouncing on a toy mouse in the living room.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "As long as your cat’s sleep habits are consistent and accompanied by normal play and eating behaviors, there’s no need to worry. Providing a variety of comfy snooze spots and ensuring they have daily opportunities for stimulation can keep them healthy, happy, and well-rested.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "7jTZbCkgpHJKNZOsQAHJIT",
+        "type": "Entry",
+        "createdAt": "2025-01-10T22:54:54.523Z",
+        "updatedAt": "2025-01-10T22:55:34.594Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-01-10T22:55:34.594Z",
+        "firstPublishedAt": "2025-01-10T22:55:34.594Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/entries/7jTZbCkgpHJKNZOsQAHJIT"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Feline Language: Reading Those Meows and Purrs"
+        },
+        "slug": {
+          "en-US": "feline-language-reading-those-meows-and-purrs"
+        },
+        "date": {
+          "en-US": "2024-12-13"
+        },
+        "body": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Have you noticed that not all meows sound the same? From soft chirrups to insistent meows, each vocalization is a clue to what your cat is feeling or wanting. While meowing isn’t the sole way cats communicate (they use body language and scent, too), it’s often directed at humans to express their needs.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Purring, on the other hand, is typically associated with contentment. Many cats purr when they’re relaxed, but they may also purr when anxious or in pain, using the vibrations as a form of self-soothing. Observing other signals—like ear position, tail movement, and overall demeanor—can help you interpret the meaning behind a purr in any given moment.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "By tuning into the subtle variations of your cat’s vocal and non-vocal cues, you’ll develop a deeper bond. Learning their language is an ongoing process that can be both fascinating and rewarding, often resulting in a happier, more harmonious household.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "5XN77YQOFLfjXLqT7ayBMp",
+        "type": "Entry",
+        "createdAt": "2025-01-10T22:56:01.610Z",
+        "updatedAt": "2025-01-10T22:56:55.234Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-01-10T22:56:55.234Z",
+        "firstPublishedAt": "2025-01-10T22:56:55.234Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/entries/5XN77YQOFLfjXLqT7ayBMp"
+      },
+      "fields": {
+        "title": {
+          "en-US": "The Great Debate: Indoor vs. Outdoor Cats"
+        },
+        "slug": {
+          "en-US": "the-great-debate-indoor-vs-outdoor-cats"
+        },
+        "date": {
+          "en-US": "2024-12-07"
+        },
+        "body": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "The question of whether to keep cats strictly indoors or allow them to roam freely sparks plenty of discussion. Advocates for outdoor cats argue that it aligns with their natural hunting instincts and provides them with ample exploration. However, outdoor living also exposes cats to risks such as cars, poisonous plants, and encounters with wildlife or stray animals.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Indoor cat enthusiasts prioritize safety, ensuring felines remain protected from harsh elements and potential danger. Still, life indoors can become dull if cats lack mental and physical stimulation. Toys, scratching posts, and window perches all help satisfy a cat’s curiosity while keeping them out of harm’s way.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Ultimately, the decision hinges on personal circumstances. If you live in an urban environment with heavy traffic or predators, an indoor setting might be best. If you have a secure yard and can supervise outdoor time, you may find a happy medium that lets your cat enjoy fresh air and exercise without compromising safety.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "59nUFHsopYVVE8lmbBWIzM",
+        "type": "Entry",
+        "createdAt": "2025-01-10T22:57:05.399Z",
+        "updatedAt": "2025-01-10T22:57:40.251Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-01-10T22:57:40.251Z",
+        "firstPublishedAt": "2025-01-10T22:57:40.251Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/entries/59nUFHsopYVVE8lmbBWIzM"
+      },
+      "fields": {
+        "title": {
+          "en-US": "From Stray to Stay: Welcoming a Rescue Cat into Your Home"
+        },
+        "slug": {
+          "en-US": "from-stray-to-stay-welcoming-a-rescue-cat-into-your-home"
+        },
+        "date": {
+          "en-US": "2024-11-13"
+        },
+        "body": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Offering a loving home to a rescue cat can be one of the most fulfilling experiences for any pet owner. Many shelter cats have endured hardships—abandonment, starvation, or illness—yet they often display remarkable resilience. By adopting, you give them a second chance at a safe, nurturing life.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Transitioning a rescue cat to a new home requires patience. Provide a quiet space with cozy bedding, food, and water, allowing them to adjust at their own pace. Over time, as they gain trust, you’ll see their personalities shine through—whether they’re playful and adventurous or shy and tranquil.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Don’t forget to schedule a vet visit for a full check-up and vaccinations. Ask shelter staff about any known medical history or behavioral quirks so you can cater to your new friend’s unique needs. Your reward will be unwavering gratitude and companionship from a cat who finally feels secure.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "2sRRV3udiLss0h2yfimsTF",
+        "type": "Entry",
+        "createdAt": "2025-01-10T22:57:59.886Z",
+        "updatedAt": "2025-01-10T22:58:30.266Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-01-10T22:58:30.266Z",
+        "firstPublishedAt": "2025-01-10T22:58:30.266Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/entries/2sRRV3udiLss0h2yfimsTF"
+      },
+      "fields": {
+        "title": {
+          "en-US": " The Importance of Play: Keeping Your Cat Active"
+        },
+        "slug": {
+          "en-US": "the-importance-of-play-keeping-your-cat-active"
+        },
+        "date": {
+          "en-US": "2024-12-03"
+        },
+        "body": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Although cats have a reputation for lounging, they also need regular exercise to stay healthy and happy. Engaging in daily play sessions simulates the stalking and pouncing behaviors they’d use in the wild. An interactive wand toy or laser pointer can bring out a feline’s inner hunter, encouraging them to sprint, jump, and swat.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Play is more than just physical exertion; it’s also great mental stimulation. Puzzle feeders, treat-dispensing toys, and climbing structures challenge a cat’s problem-solving skills. These activities help curb boredom and can reduce unwanted behaviors such as scratching furniture or aggressive play biting.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Aim for several short play sessions each day, especially before meal times, to mimic a cat’s natural “hunt-eat-sleep” cycle. By incorporating varied toys and approaches—like surprise laser chases or toss-the-kibble games—you’ll keep playtime fresh and interesting for both you and your cat.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "4iJkI9s9p4s6pFmSP8xnun",
+        "type": "Entry",
+        "createdAt": "2025-01-10T22:58:52.826Z",
+        "updatedAt": "2025-01-10T22:59:26.704Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-01-10T22:59:26.704Z",
+        "firstPublishedAt": "2025-01-10T22:59:26.704Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/entries/4iJkI9s9p4s6pFmSP8xnun"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Senior Cats: Caring for Feline Friends in Their Golden Years"
+        },
+        "slug": {
+          "en-US": "senior-cats-caring-for-feline-friends-in-their-golden-years"
+        },
+        "date": {
+          "en-US": "2024-10-10"
+        },
+        "body": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Just like humans, cats experience changes as they age. Their metabolism slows, joints may stiffen, and senses like hearing or vision can decline. Senior cats often sleep more and move less, requiring extra love and a gentle touch.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Caring for an older cat means adjusting their diet and ensuring they receive regular veterinary check-ups. Look for food formulated specifically for seniors, which can help manage weight and provide targeted nutrients. Some cats benefit from joint supplements or specialized treatments if arthritis becomes an issue.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Despite their reduced mobility, older cats still enjoy mental stimulation. Provide soft bedding in easily accessible areas, and keep a few toys or puzzle feeders around to maintain engagement. With patience and thoughtful adjustments, you can help your senior cat enjoy a comfortable, contented life in their later years.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "55Jsbwjo5tkj129VYtUhvk",
+        "type": "Entry",
+        "createdAt": "2025-01-10T22:59:40.089Z",
+        "updatedAt": "2025-01-10T23:00:16.852Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-01-10T23:00:16.852Z",
+        "firstPublishedAt": "2025-01-10T23:00:16.852Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/entries/55Jsbwjo5tkj129VYtUhvk"
+      },
+      "fields": {
+        "title": {
+          "en-US": "The Kittens Are Coming: Preparing for a New Litter"
+        },
+        "slug": {
+          "en-US": "the-kittens-are-coming-preparing-for-a-new-litter"
+        },
+        "date": {
+          "en-US": "2024-09-11"
+        },
+        "body": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Few things are more delightful than the arrival of newborn kittens. Whether you’ve taken in a pregnant stray or your own cat is expecting, preparation is essential. Create a warm, private birthing area with a cozy box or bed, and keep clean towels and a heating source on hand.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "After birth, kittens rely heavily on their mother for nourishment and warmth. However, it’s crucial to schedule a vet check-up to ensure both mom and babies are healthy. The next few weeks will be a whirlwind of growth, with the kittens opening their eyes, finding their wobbly footing, and learning social skills.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "As they become mobile, they’ll explore their surroundings with playful curiosity—so kitten-proof your home by securing cords and removing hazardous items. Introduce them to new experiences gradually, and watch in awe as they learn about the world, one adorable pounce at a time.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "6clLQ8uUv9ZNeIKV8s8hbY",
+        "type": "Entry",
+        "createdAt": "2025-01-10T23:00:35.621Z",
+        "updatedAt": "2025-01-10T23:01:04.974Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-01-10T23:01:04.974Z",
+        "firstPublishedAt": "2025-01-10T23:01:04.974Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/entries/6clLQ8uUv9ZNeIKV8s8hbY"
+      },
+      "fields": {
+        "title": {
+          "en-US": "The Allure of the Cat Café: Sipping Coffee with Furry Companions"
+        },
+        "slug": {
+          "en-US": "the-allure-of-the-cat-cafe-sipping-coffee-with-furry-companions"
+        },
+        "date": {
+          "en-US": "2024-08-25"
+        },
+        "body": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Cat cafés have been growing in popularity worldwide, giving visitors the chance to enjoy a latte while surrounded by purring cats. The concept often marries the comfort of a cozy café setting with a mission to find permanent homes for adoptable felines. Many cafés partner with local shelters to give cats a relaxed environment where potential adopters can interact with them.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "Spending time with cats has been linked to stress relief, and cat cafés capitalize on this effect by providing a serene, playful atmosphere. Guests can pet, cuddle, or play with the resident kitties, all while sipping their favorite beverage. It’s a unique way to socialize, not only with other cat lovers but also with the cats themselves.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "If you’re seeking a new furry friend, a cat café can be an ideal spot for a “trial run.” Instead of meeting a cat in a shelter, you get to see how the cat behaves in a more natural environment. Best of all, if you happen to fall in love, you can often start the adoption process right then and there.",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "rxaC2ZccD5cfWTKThx4No",
+        "type": "Entry",
+        "createdAt": "2025-01-10T23:24:54.341Z",
+        "updatedAt": "2025-01-10T23:25:16.700Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-01-10T23:25:16.700Z",
+        "firstPublishedAt": "2025-01-10T23:25:16.700Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/entries/rxaC2ZccD5cfWTKThx4No"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Purring with Purpose: The Soothing Power of Feline Vibration"
+        },
+        "slug": {
+          "en-US": "purring-with-purpose-the-soothing-power-of-feline-vibration"
+        },
+        "date": {
+          "en-US": "2025-01-14"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Cats are famous for their purr—a soft, rhythmic sound that resonates not just in their bodies but often in the hearts of their human companions. The exact mechanism of purring involves rapid muscle contractions around the larynx, creating vibrations that can calm and comfort. Interestingly, research suggests that these vibrations may promote healing, reducing stress and even helping bones mend more quickly.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Beyond its physiological benefits, purring serves as a form of communication. Kittens learn to purr within days of birth, using it as a way to let their mothers know they’re safe or hungry. Adult cats may purr to request food, convey contentment, or seek reassurance when they’re anxious or in pain.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "For cat lovers, there’s something deeply soothing about a cat’s purr, which can lower human stress levels and even help in therapeutic settings. So, the next time your feline friend curls up beside you and starts to purr, take a moment to appreciate the emotional and physical comfort they’re offering.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "6jnVvkoZCNYlMJ4qK0bz81",
+        "type": "Entry",
+        "createdAt": "2025-01-10T23:26:04.355Z",
+        "updatedAt": "2025-01-10T23:26:41.142Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-01-10T23:26:41.142Z",
+        "firstPublishedAt": "2025-01-10T23:26:41.142Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/entries/6jnVvkoZCNYlMJ4qK0bz81"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Cat Bonding 101: Building Trust and Closeness with Your Feline"
+        },
+        "slug": {
+          "en-US": "cat-bonding-101-building-trust-and-closeness-with-your-feline"
+        },
+        "date": {
+          "en-US": "2024-08-06"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Unlike dogs, who often rush to greet you with wagging tails, cats tend to be more cautious in showing affection. Earning a cat’s trust can take time, but the reward is a meaningful bond that can last a lifetime. The key is to let the cat set the pace—don’t force cuddles or pick them up if they show signs of discomfort.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Engaging in interactive play sessions can help strengthen this bond. Feather wands, laser pointers, and puzzle feeders tap into a cat’s natural hunting instincts, fostering a sense of teamwork between you and your feline. If your cat is comfortable, a gentle brushing or a slow-blink session (mimicking feline affection) can also solidify your connection.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Remember that every cat is unique—some are lap-loungers, while others show love through quick head bumps. By respecting individual boundaries and recognizing subtle signs of affection, you’ll establish a deep sense of trust and companionship with your cat.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "4TOWKGl4Vbg1XbgJ9TwcXU",
+        "type": "Entry",
+        "createdAt": "2025-01-10T23:27:06.699Z",
+        "updatedAt": "2025-01-10T23:27:40.721Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-01-10T23:27:40.721Z",
+        "firstPublishedAt": "2025-01-10T23:27:40.721Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/entries/4TOWKGl4Vbg1XbgJ9TwcXU"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Cat Health Essentials: Vet Visits and Preventive Care"
+        },
+        "slug": {
+          "en-US": "cat-health-essentials-vet-visits-and-preventive-care"
+        },
+        "date": {
+          "en-US": "2024-05-15"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Routine veterinary care is crucial for keeping your cat in peak condition. Even if your cat appears healthy, regular check-ups help catch potential issues early, saving you both stress and costly medical treatments down the road. Annual or biannual vet visits typically include vaccinations, dental evaluations, and general health assessments.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Preventive measures, like administering flea and tick treatments or providing a balanced, high-quality diet, can make a significant difference. Neutering or spaying not only prevents unwanted litters but can also reduce the risk of certain cancers and curb territorial behaviors.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Don’t forget to observe changes in your cat’s behavior or appearance—sudden weight loss, appetite changes, or frequent vomiting are signs that warrant prompt veterinary attention. A proactive approach to your cat’s health goes a long way toward ensuring they lead a happy, comfortable life.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "6Yws22c6OdElRPOBRl5CQz",
+        "type": "Entry",
+        "createdAt": "2025-01-10T23:28:14.032Z",
+        "updatedAt": "2025-01-10T23:28:49.708Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-01-10T23:28:49.708Z",
+        "firstPublishedAt": "2025-01-10T23:28:49.708Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/entries/6Yws22c6OdElRPOBRl5CQz"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Harmony at Home: Introducing New Cats to Existing Pets"
+        },
+        "slug": {
+          "en-US": "harmony-at-home-introducing-new-cats-to-existing-pets"
+        },
+        "date": {
+          "en-US": "2024-01-24"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Introducing a new cat to a household with existing pets can be tricky, especially if those pets are also felines. Patience is key—abrupt meetings can lead to territorial disputes and prolonged tension. Start by keeping your new cat in a separate “safe space” with their own food, water, and litter box.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Use scent swapping to facilitate a smooth transition. Exchange blankets or toys between the cats so they become familiar with each other’s scent before any face-to-face encounter. Gradually allow supervised visits in a neutral area, offering treats or praise for calm behavior.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Keep an eye on body language: flattened ears, puffed tails, and hissing indicate that one or both cats need more time apart. If introduced carefully, many cats can learn to coexist peacefully—some even become inseparable friends who groom or sleep side by side.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "7vILW84WCWzqLblF7IEOCx",
+        "type": "Entry",
+        "createdAt": "2025-01-11T05:02:03.931Z",
+        "updatedAt": "2025-01-11T07:25:45.585Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2025-01-11T07:25:45.585Z",
+        "firstPublishedAt": "2025-01-11T07:25:45.585Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/entries/7vILW84WCWzqLblF7IEOCx"
+      },
+      "fields": {
+        "title": {
+          "en-US": "Cat Tales: Historical and Cultural Significance of Our Feline Friends"
+        },
+        "slug": {
+          "en-US": "cat-tales-historical-and-cultural-significance-of-our-feline-friends"
+        },
+        "date": {
+          "en-US": "2024-08-12"
+        },
+        "body": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Cats have roamed human history for centuries, weaving themselves into our myths, art, and daily life. In ancient Egypt, cats were revered to the point of worship, symbolizing protection and grace. The goddess Bastet, often depicted as a woman with a cat’s head, represented fertility and domestic harmony.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Meanwhile, some European folklore unfairly painted cats—especially black cats—as omens of bad luck or witchcraft. Over time, these superstitions evolved, with many cultures now viewing black cats as symbols of good luck and prosperity. Today, the internet has turned them into beloved viral stars, celebrated for their quirky antics.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              },
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "From sacred guardians to internet icons, cats have retained a certain mystique throughout their long partnership with humans. Their adaptability, elegance, and endearing quirks continue to fascinate, ensuring they’ll remain cherished household members for generations to come.",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "1uNtSKda7U33l2J77VFJ3c",
+        "type": "Entry",
+        "createdAt": "2025-01-11T08:29:43.669Z",
+        "updatedAt": "2025-01-11T08:30:29.736Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 2,
+        "publishedAt": "2025-01-11T08:30:29.736Z",
+        "firstPublishedAt": "2025-01-11T08:30:29.736Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 3,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "automationTags": [
+        ],
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "postList"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/entries/1uNtSKda7U33l2J77VFJ3c"
+      },
+      "fields": {
+        "preListContent": {
+          "en-US": {
+            "nodeType": "document",
+            "data": {
+            },
+            "content": [
+              {
+                "nodeType": "paragraph",
+                "data": {
+                },
+                "content": [
+                  {
+                    "nodeType": "text",
+                    "value": "Now that you’ve dusted off your whiskers, let’s pounce on the latest fur-midable reads in our newest blog posts!",
+                    "marks": [
+                    ],
+                    "data": {
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "assets": [
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "3RGOuur7LLEFlK8XF8X3Ju",
+        "type": "Asset",
+        "createdAt": "2025-01-09T03:19:07.129Z",
+        "updatedAt": "2025-01-09T03:22:19.450Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-01-09T03:22:19.450Z",
+        "firstPublishedAt": "2025-01-09T03:22:19.450Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/assets/3RGOuur7LLEFlK8XF8X3Ju"
+      },
+      "fields": {
+        "title": {
+          "en-US": "placeholder-img"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/jisgw3tevuum/3RGOuur7LLEFlK8XF8X3Ju/b973ccc115e40994075e52a0c1f8f970/placeholder-img.png",
+            "details": {
+              "size": 5844,
+              "image": {
+                "width": 432,
+                "height": 225
+              }
+            },
+            "fileName": "placeholder-img.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "aRYoVzIwh9B9EAYAhcEOe",
+        "type": "Asset",
+        "createdAt": "2025-01-09T07:36:50.081Z",
+        "updatedAt": "2025-01-09T07:38:21.667Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2025-01-09T07:38:21.667Z",
+        "firstPublishedAt": "2025-01-09T07:38:21.667Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/assets/aRYoVzIwh9B9EAYAhcEOe"
+      },
+      "fields": {
+        "title": {
+          "en-US": "kitty"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/jisgw3tevuum/aRYoVzIwh9B9EAYAhcEOe/60da1db184468e60a1d7df35b5e5b110/pexels-pixabay-416160.jpg",
+            "details": {
+              "size": 1504144,
+              "image": {
+                "width": 3888,
+                "height": 2592
+              }
+            },
+            "fileName": "pexels-pixabay-416160.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "2ZEemF2W0038uwNZMxoryZ",
+        "type": "Asset",
+        "createdAt": "2025-01-10T20:54:27.013Z",
+        "updatedAt": "2025-01-10T22:03:25.724Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-01-10T20:55:00.845Z",
+        "firstPublishedAt": "2025-01-10T20:55:00.845Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "changed"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/assets/2ZEemF2W0038uwNZMxoryZ"
+      },
+      "fields": {
+        "title": {
+          "en-US": "pexels-holfotos-3777622"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/jisgw3tevuum/2ZEemF2W0038uwNZMxoryZ/4446506e563791f6d1d8162ea9304c8f/pexels-holfotos-3777622.jpg",
+            "details": {
+              "size": 50290,
+              "image": {
+                "width": 634,
+                "height": 357
+              }
+            },
+            "fileName": "pexels-holfotos-3777622.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "6ojPjqYrlTKH4BAmwfDAY0",
+        "type": "Asset",
+        "createdAt": "2025-01-10T21:07:55.429Z",
+        "updatedAt": "2025-01-10T21:08:12.018Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 3,
+        "publishedAt": "2025-01-10T21:08:12.018Z",
+        "firstPublishedAt": "2025-01-10T21:08:12.018Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 4,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/assets/6ojPjqYrlTKH4BAmwfDAY0"
+      },
+      "fields": {
+        "title": {
+          "en-US": "pexels-pixabay-45170(1)"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/jisgw3tevuum/6ojPjqYrlTKH4BAmwfDAY0/e226ad00c2c5a8e0c65ff82589f14e71/pexels-pixabay-45170_1_.jpg",
+            "details": {
+              "size": 56276,
+              "image": {
+                "width": 640,
+                "height": 356
+              }
+            },
+            "fileName": "pexels-pixabay-45170(1).jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "metadata": {
+        "tags": [
+        ],
+        "concepts": [
+        ]
+      },
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "id": "5KPLiWSuxwSF8J1USZtHQ7",
+        "type": "Asset",
+        "createdAt": "2025-01-11T01:06:58.023Z",
+        "updatedAt": "2025-01-11T04:12:36.626Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 8,
+        "publishedAt": "2025-01-11T04:12:36.626Z",
+        "firstPublishedAt": "2025-01-11T01:07:17.639Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 9,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "fieldStatus": {
+          "*": {
+            "en-US": "published"
+          }
+        },
+        "urn": "crn:contentful:::content:spaces/jisgw3tevuum/environments/master/assets/5KPLiWSuxwSF8J1USZtHQ7"
+      },
+      "fields": {
+        "title": {
+          "en-US": "favicon"
+        },
+        "description": {
+          "en-US": ""
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/jisgw3tevuum/5KPLiWSuxwSF8J1USZtHQ7/a288b12b38d5f23d66c68aa8fd9437d6/icons8-cat-footprint-32.png",
+            "details": {
+              "size": 1002,
+              "image": {
+                "width": 32,
+                "height": 32
+              }
+            },
+            "fileName": "icons8-cat-footprint-32.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    }
+  ],
+  "locales": [
+    {
+      "name": "English (United States)",
+      "code": "en-US",
+      "fallbackCode": null,
+      "default": true,
+      "contentManagementApi": true,
+      "contentDeliveryApi": true,
+      "optional": false,
+      "sys": {
+        "type": "Locale",
+        "id": "0OT1AlHTS5WcajTIFtWKi6",
+        "version": 1,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "environment": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Environment",
+            "id": "master",
+            "uuid": "88b7318c-6886-445d-8c09-4b31e356335f"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "createdAt": "2025-01-08T21:19:01Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedAt": "2025-01-08T21:19:01Z"
+      }
+    }
+  ],
+  "webhooks": [
+  ],
+  "roles": [
+    {
+      "name": "Editor",
+      "description": "Allows editing, publishing and archiving of content",
+      "policies": [
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Entry"
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "effect": "allow",
+          "actions": "all",
+          "constraint": {
+            "and": [
+              {
+                "equals": [
+                  {
+                    "doc": "sys.type"
+                  },
+                  "Asset"
+                ]
+              }
+            ]
+          }
+        }
+      ],
+      "permissions": {
+        "ContentModel": [
+          "read"
+        ],
+        "Settings": [
+        ],
+        "ContentDelivery": [
+        ],
+        "Environments": [
+        ],
+        "EnvironmentAliases": [
+        ],
+        "Tags": [
+        ]
+      },
+      "sys": {
+        "type": "Role",
+        "id": "0PpwqP0DYRyxeFWbJOe3LY",
+        "version": 0,
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "jisgw3tevuum"
+          }
+        },
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "createdAt": "2025-01-08T21:19:02Z",
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "0DyvRKHQeMlRHlAA7ArkBG"
+          }
+        },
+        "updatedAt": "2025-01-08T21:19:02Z"
+      }
+    }
+  ]
+}
