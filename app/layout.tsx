@@ -8,7 +8,6 @@ const { title, description, keywords, publisher, authors } = site
 
 export async function generateMetadata(): Promise<Metadata> {
 
-  // console.log("keywords: ", keywords as string[])
   return {
     title: title as string,
     description: description as string,
@@ -25,7 +24,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  // await loadFavicon()
+  await loadFavicon()
 
   return (
 
