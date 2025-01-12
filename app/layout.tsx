@@ -4,14 +4,18 @@ import "./globals.css";
 import { getSite, loadFavicon } from "@/lib/actions";
 
 const site = await getSite()
-const { title, description, keywords } = site
+const { title, description, keywords, publisher, authors } = site
 
 export async function generateMetadata(): Promise<Metadata> {
 
+  // console.log("keywords: ", keywords as string[])
   return {
     title: title as string,
     description: description as string,
-    keywords: keywords as string[]
+    publisher: publisher as string,
+    authors: authors,
+    keywords: keywords as string[],
+    creator: "Dale Hutchinson"
   }
 }
 
@@ -21,7 +25,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  await loadFavicon()
+  // await loadFavicon()
 
   return (
 

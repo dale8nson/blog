@@ -4,11 +4,29 @@ import * as types from "@contentful/rich-text-types"
 import { BackButton } from "@/components/BackButton"
 import { Footer } from "@/components/Footer"
 import { Header } from "@/components/Header"
+import { Metadata } from "next"
 
 export const revalidate = 60
 
+const site = await getSite()
+
+export async function generateMetadata({params}:{params: Promise<{ slug: string }>}): Promise<Metadata> {
+
+  const { title, description, publisher } = site
+  const slug = (await params).slug
+  const post = await getPostBySlug(slug)
+  const { title: postTitle, authors, keywords } = post
+  return {
+    title: `${title} | ${postTitle}` as string,
+    description: description as string,
+    publisher: publisher as string,
+    authors: authors as {name: string}[],
+    keywords: keywords as string[],
+    creator: "Dale Hutchinson"
+  }
+}
+
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
-  const site = await getSite()
   const { slug } = await params
   const post = await getPostBySlug(slug)
   const { body } = post
