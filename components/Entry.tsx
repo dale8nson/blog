@@ -17,7 +17,7 @@ const Entry = ({ node }: { node: types.Block | types.Inline }) => {
 
           case BLOCKS.DOCUMENT:
             {
-              return <div key={id} className="flex flex-col gap-4">{<Entry key={useId()} node={nd} />}</div>
+              return <div key={id} className="flex flex-col">{<Entry key={useId()} node={nd} />}</div>
             }
           case BLOCKS.HEADING_1:
             return <h1 className="h1" key={id}>{<Entry key={useId()} node={nd} />}</h1>
@@ -75,7 +75,7 @@ const Entry = ({ node }: { node: types.Block | types.Inline }) => {
                 }
               }).join(" ")
 
-              return <span className={className} key={id}>{nd.value + "\n"}</span>
+              return <span className={className} key={id}>{nd.value}</span>
             }
           case "hyperlink":
             return <span key={id}><Link href={nd.data.uri}>{<Entry key={useId()} node={nd} />}</Link></span>

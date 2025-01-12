@@ -23,8 +23,8 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-
-  await loadFavicon()
+  
+  process.env.NODE_ENV === "production" && await loadFavicon()
 
   return (
 
