@@ -16,7 +16,7 @@ const Header = ({ post, site, homepage, date }: { post?: contentful.Entry<BlogPo
   const header = post?.header || homepage?.header || site?.defaultHeader || null
 
   if (header) return (
-    <header className="w-11/12 md:w-2/3 max-h-[20vw] flex flex-row justify-start items-center my-4 border-black border-b-2 border-solid">
+    <header className="w-11/12 md:w-2/3 flex flex-row justify-start items-center my-4 border-black border-b-2 border-solid">
       <Entry node={header as types.Block} />
     </header>
   )
@@ -24,7 +24,7 @@ const Header = ({ post, site, homepage, date }: { post?: contentful.Entry<BlogPo
   if (post) {
     const dateStr = getDateString(post.date as string)
     return (
-      <header className="flex flex-col w-11/12 max-h-[20vw] md:w-2/3 items-start gap-2 my-4 py-2 border-black border-b-2 border-solid">
+      <header className="flex flex-col w-11/12 md:w-2/3 items-start gap-2 my-4 py-2 border-black border-b-2 border-solid">
         <h1>{post.title as string}</h1>
         <p>{dateStr}</p>
       </header>
@@ -33,7 +33,7 @@ const Header = ({ post, site, homepage, date }: { post?: contentful.Entry<BlogPo
 
   if (pathname === "/blog" && date) {
     return (
-      <header className="w-11/12 gap-2 md:w-2/3 max-h-[20vw] flex flex-col justify-center items-start my-4 border-black pb-4 border-b-[1.5px] border-solid">
+      <header className="w-11/12 gap-2 md:w-2/3 flex flex-col justify-center items-start my-4 border-black pb-4 border-b-[1.5px] border-solid">
         <Link className="!no-underline" href="/"><h1 className="font-bold text-black ">{title as string}</h1></Link>
         <p className="leading-5">{date}</p>
       </header>
