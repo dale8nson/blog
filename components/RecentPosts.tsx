@@ -9,13 +9,13 @@ const RecentPosts = async () => {
   const shortList = posts.slice(0, 6)
 
   return (
-    <ul>
+    <ul className="pr-2">
       {shortList.map(async item => {
         const { title, slug, date } = item.fields
         const d = new Date(date as string)
         const dateStr = d.toLocaleDateString("en-GB")
         return (
-          <li className="text-wrap">{dateStr} - <Link href={`/blog/${slug}`} className="text-wrap whitespace-break-spaces">{title as string}</Link> </li>
+          <li className="text-wrap whitespace-break-spaces">{dateStr} - <Link href={`/blog/${slug}`} className="text-wrap whitespace-break-spaces">{title as string}</Link> </li>
         )
       })}
       {posts.length >= 7 && <li><Link href="/blog"><i>More...</i></Link></li>}
