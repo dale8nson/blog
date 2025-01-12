@@ -18,8 +18,8 @@ const RecentPosts = async () => {
           <li className="text-wrap">{dateStr} - <Link href={`/blog/${slug}`} className="text-wrap whitespace-break-spaces">{title as string}</Link> </li>
         )
       })}
-      {/* {posts.items.length === 7 && <li><Link href="/blog"><i>More...</i></Link></li>} */}
-      <li><Link href="/blog"><i>More...</i></Link></li>
+      {posts.length >= 7 && <li><Link href="/blog"><i>More...</i></Link></li>}
+      {/* <li><Link href="/blog"><i>More...</i></Link></li> */}
     </ul>
   )
 }
