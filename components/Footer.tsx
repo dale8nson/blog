@@ -16,7 +16,7 @@ const Footer = async ({ slug }: { slug?: string }) => {
   )
 
   return (
-    <footer className="w-11/12 max-h-[20vw] md:w-2/3 flex flex-row flex-grow-0 justify-start items-start my-4 border-black border-t-2 mt-6 border-solid pt-4">
+    <footer className="w-11/12 md:w-2/3 flex flex-row flex-grow-0 justify-start items-start my-4 border-black border-t-2 mt-6 border-solid pt-4">
       <p>© {new Date().getFullYear()} {title as string}. All rights reserved.</p>
     </footer>
   )

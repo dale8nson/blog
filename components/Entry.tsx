@@ -52,7 +52,7 @@ const Entry = ({ node }: { node: types.Block | types.Inline }) => {
               const { url, details } = nd.data.target.fields.file
               const { width, height } = details.image
 
-              return (<div key={id} className="flex flex-row w-full justify-center items-start"><Image src={`https:${url}`} width={width} height={height} alt={title} /></div>)
+              return (<div key={id} className="flex flex-row w-full justify-start items-start"><Image src={`https:${url}`} width={width} height={height} alt={title} /></div>)
             }
           case BLOCKS.TABLE:
             return <table key={id}>{<Entry key={useId()} node={nd} />}</table>

@@ -9,7 +9,7 @@ const RecentPosts = async () => {
   const shortList = posts.slice(0, 6)
 
   return (
-    <ul className="mx-2">
+    <ul>
       {shortList.map(async item => {
         const { title, slug, date } = item.fields
         const d = new Date(date as string)
