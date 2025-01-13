@@ -55,7 +55,6 @@ export default async function Page() {
     <>
       <Header site={site} date={dateStr} />
       <main className="w-11/12 min-h-[60vh] md:w-2/3 flex flex-col justify-start items-start content-evenly gap-5" >
-        <BackButton />
         {preListContent && <Entry node={preListContent as types.Block} />}
         <PostList posts={posts as contentful.Entry<BlogPostSkeleton>[]} />
       </main>

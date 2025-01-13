@@ -35,7 +35,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
     <>
       <Header post={post} site={site} />
       <main className="w-11/12 min-h-[60vh] md:w-2/3 flex flex-col justify-start items-start content-evenly gap-5 md:overflow-y-scroll">
-        <BackButton />
+        
         <Entry node={body as types.Block} />
       </main>
       <Footer />

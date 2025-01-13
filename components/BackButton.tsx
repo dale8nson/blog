@@ -5,7 +5,7 @@ const BackButton = () => {
   const router = useRouter()
 
   return (
-    <button className="text-[#3f81d2] underline" onClick={() => router.back()} >[⟵ Back]</button>
+    <button className="text-[#3f81d2] underline self-start" onClick={() => router.back()} >[⟵ Back]</button>
   )
 }
 
