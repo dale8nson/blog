@@ -1,5 +1,4 @@
 "use client"
-import { use } from "react"
 import { usePathname } from "next/navigation"
 import { Entry } from "./Entry"
 import * as types from "@contentful/rich-text-types"
