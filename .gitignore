@@ -42,3 +42,10 @@ yarn-error.log*
 next-env.d.ts
 app/favicon.ico
 components/SideNavButton.tsx
+
+/vcpkg_installed
+vcpkg-configuration.json
+vcpkg.json
+/.vscode
+lib/image_optimiser
+lib/image_optimiser.cpp
