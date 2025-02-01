@@ -4,6 +4,8 @@ import * as contentful from "contentful"
 import fs from "node:fs/promises"
 import sharp from "sharp"
 import ico from "sharp-ico"
+//@ts-ignore
+import websock from "websock"
 
 const client = contentful.createClient({ accessToken: process.env.CONTENTFUL_ACCESS_TOKEN as string, space: process.env.CONTENTFUL_SPACE_ID as string })
 
@@ -60,3 +62,70 @@ export const loadFavicon = async () => {
 
   await ico.sharpsToIco([sharp(process.cwd() + "/public/" + fileName)], process.cwd() + "/app/" + "favicon.ico")
 }
+
+const openWebSocket: () => Promise<void> = async () => {
+  websock.listen(4444, (socket: any) => {
+    socket.on('message', (message: any) => socket.send(message))
+  }, () => {
+    const socket = websock.connect("ws://localhost:4444")
+    socket.on("open", () => console.log("socket opened"))
+
+  })
+}
+
+export const generateImageSourceSet: (url: string) => Promise<string> = async (url: string) => {
+  // await openWebSocket()
+
+  // return new Promise<string>( async (resolve, reject) => {
+
+
+  // await websock.listen(4444, (socket: any) => {
+  //   socket.on('message', (message: any) => socket.send(message))
+  // }, () => {
+  //   const socket = websock.connect("ws://localhost:4444")
+  //   socket.on("open", async () => {
+  //     console.log("socket opened")
+  const buf = await fetch(url).then(res => res.arrayBuffer())
+
+  const wasmModule = await import('@/public/wasm/IO.js');
+
+  const Module = await wasmModule.default({
+    locateFile: (file: any) => {
+      if (file.endsWith('.wasm')) {
+        // Force it to look in /wasm/
+        return `${process.cwd()}/public/wasm/${file}`;
+      }
+      return file;
+    }
+  })
+
+  const ptr: number = Module._malloc(buf.byteLength)
+  const dataHeap = new Uint8Array(Module.HEAPU8.buffer, ptr, buf.byteLength)
+  dataHeap.set(new Uint8Array(buf));
+
+  // console.log("Module: ", Module)
+try {
+  const resultPtr = await Module.ccall('generateImageSourceSet', 'number', ['number', 'number', 'string'], [ptr, buf.byteLength, url]);
+  console.log("resultPtr: ", resultPtr);
+
+  const srcset = Module.UTF8ToString(resultPtr)
+
+  console.log("srcset: ", srcset)
+  
+  await Module.ccall("free", null, ["number"], resultPtr);
+  
+  return srcset
+
+} catch (e) {
+  console.log(e)
+}
+  
+return "generation failed"
+
+  
+}
+// )
+
+//   })
+// })
+// } 

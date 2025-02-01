@@ -1,5 +1,7 @@
 import { EntryFieldTypes } from "contentful"
 
+export declare module "websock"
+
 type SiteSkeleton = {
   contentTypeId: "site"
   fields: {

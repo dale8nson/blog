@@ -26,7 +26,10 @@
     "sharp": "^0.33.5",
     "sharp-ico": "^0.1.5",
     "tailwind-merge": "^2.6.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "websock": "^0.3.19",
+    "websockify": "^0.7.1",
+    "ws": "^8.18.0"
   },
   "devDependencies": {
     "@types/node": "^20.12.2",
